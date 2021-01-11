@@ -3,14 +3,14 @@ public void setup()
 {            
     //your code here 
  
-    String digits;
+    String digits; //stores the substrings of e that are looped through
   
     
     for(int counter = 1; counter < e.length()-10; counter++){
-      digits = e.substring(counter, counter+10);
+      digits = e.substring(counter, counter+10); 
       if(isPrime(Double.parseDouble(digits))){
         System.out.println(digits);
-        break;
+        break; //exit for loop when a prime is found
       }
     }
       
